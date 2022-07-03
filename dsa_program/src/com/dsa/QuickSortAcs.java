@@ -1,8 +1,9 @@
 package com.dsa;
-public class QuickSort {
+
+public class QuickSortAcs {
 
     public static void main(String[] args) {
-        int ar[] = {10, 7, 8, 9, 1, 5};
+        int ar[] = {2,4,6,8,10,12,14,16,18,20};
         quickSort(ar, 0, ar.length - 1);
         printArray(ar);
     }
@@ -17,7 +18,10 @@ public class QuickSort {
 
     public static int partition(int[] ar, int start, int end) {
         int pivot = ar[end];
+        // for ascending
         int i = start;
+        //for descending int i = start-1;
+
         for (int j = start; j < end; j++) {
             if (ar[j] <= pivot) {
                 int temp1 = ar[j];

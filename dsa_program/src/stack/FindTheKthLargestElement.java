@@ -1,7 +1,7 @@
 package stack;
 import java.util.*;
 
-public class FindTheKthLargestElement {
+public class  FindTheKthLargestElement {
     // This function returns the sorted stack
     public static Stack < Integer > sortStack(Stack < Integer > input) {
         //write your code here
@@ -30,9 +30,9 @@ public class FindTheKthLargestElement {
     public static void main(String args[]) {
         Stack < Integer > inputStack = new Stack < Integer > ();
         Scanner in = new Scanner(System.in);
-        int n = in .nextInt();
+        int n = in.nextInt();
         for (int i = 0; i < n; i++) {
-            inputStack.add( in .nextInt());
+            inputStack.add(in.nextInt());
         }
 
         if (inputStack.isEmpty()) {
@@ -40,7 +40,7 @@ public class FindTheKthLargestElement {
             System.exit(0);
         }
 
-        int k = in .nextInt();
+        int k = in.nextInt();
         if (k > inputStack.size()) {
             System.out.println("invalid input");
             System.exit(0);
@@ -56,7 +56,8 @@ public class FindTheKthLargestElement {
 /*
 Find kth largest element
 Description
-Write a code to find the kth largest number of the given sequence in a stack. Your program should take the following lines of input:
+Write a code to find the kth largest number of the given sequence in a stack. Your program should
+take the following lines of input:
 
 The number of elements in the input stack.
 The elements in the input stack.
@@ -64,7 +65,8 @@ The value of ‘k’.
 Note:
 
 If the input stack is empty, your program should print “ stack is empty”.
-If the value of ‘k’ is greater than the number of elements in the input stack, then print “ invalid input”
+If the value of ‘k’ is greater than the number of elements in the input stack, then print
+“ invalid input”
 Sample Input 1:
 6
 4 2 0 9 6 1

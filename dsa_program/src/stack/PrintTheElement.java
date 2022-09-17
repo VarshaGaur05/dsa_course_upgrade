@@ -27,7 +27,8 @@ public class PrintTheElement {
 /*
 Print the element
 Description
-You are given a stack with n integers and you need to print the fifth element from the top of the stack.
+You are given a stack with n integers and you need to print the fifth element from the top of
+ the stack.
 
 Input Format
 The first line contains an integer n denoting the size of stack.
